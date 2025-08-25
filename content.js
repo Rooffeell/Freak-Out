@@ -8,10 +8,9 @@ function replaceImages() {
     });
 }
 
-// Run once immediately
+
 replaceImages();
 
-// Optional: observe new images added dynamically
 const observer = new MutationObserver(mutations => {
     mutations.forEach(() => replaceImages());
 });
