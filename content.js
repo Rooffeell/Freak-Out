@@ -4,7 +4,7 @@ const replacementImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gc
 function replaceImages() {
     document.querySelectorAll("img").forEach(img => {
         img.src = replacementImage;
-        img.srcset = ""; // prevent alternative sources
+        img.srcset = "";
     });
 }
 
